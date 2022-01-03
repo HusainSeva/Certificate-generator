@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Certificate Generator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="blackdiv" id="showclass1">
+<br><br><br><br>
+<img src="certificate.jpg">
+<div id="name">Hi Coder's</div>
+</div>
+<div class="container" id="hideclass2">
+<div class="logo">WC</div>
+<h2 class="logotxt">Web Creator - Husain</h2>
+<p class="txt">Enter Your Name To Get The Certificate Of Web <br>Designing By Tech Ocean Technology</p>
+<form>
+<input type="text" placeholder="Enter Your Name" id="textfileld">
+</form>
+<button class="btn" onclick="getit()">Get Certificate</button>
+</div>
+
+<script type="text/javascript">
+$(".btn").click(function(){
+  $(".container").hide();
+});
+
+$(".btn").click(function(){
+  $(".blackdiv").show();
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
